@@ -9,12 +9,22 @@ import SwiftUI
 
 struct CustomTabBar: View {
     
+    @State
+    var isTapped = 0
     
     var body: some View {
         GeometryReader { geo in
             ZStack {
                 Color.black.ignoresSafeArea()
-                // some view
+                
+                if (isTapped == 0) {
+                    HomeView()
+                } else if (isTapped == 1) {
+                    SettingsView()
+                } else if (isTapped == 2) {
+                    ProfileView()
+                }
+                
                 VStack {
                     Spacer()
                     ZStack {
@@ -26,15 +36,21 @@ struct CustomTabBar: View {
                                 alignment: .center
                             )
                         HStack {
-                            Button(action: {}) {
+                            Button(action: {
+                                changeTab(index: 0)
+                            }) {
                                 Image(systemName: "house.fill")
                             }
                             Spacer()
-                            Button(action: {}) {
-                                Image(systemName: "gear")
+                            Button(action: {
+                                changeTab(index: 1)
+                            }) {
+                                Image(systemName: "gearshape.fill")
                             }
                             Spacer()
-                            Button(action: {}) {
+                            Button(action: {
+                                changeTab(index: 2)
+                            }) {
                                 Image(systemName: "person.fill")
                             }
                         }
@@ -44,6 +60,12 @@ struct CustomTabBar: View {
                     }
                 }
             }
+        }
+    }
+    
+    func changeTab(index: Int) {
+        withAnimation {
+            self.isTapped = index
         }
     }
 }

@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		7F65E4B92955D1B300A3A253 /* SwiftUICustomTabBar_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65E4B82955D1B300A3A253 /* SwiftUICustomTabBar_1App.swift */; };
-		7F65E4BB2955D1B300A3A253 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65E4BA2955D1B300A3A253 /* ContentView.swift */; };
+		7F65E4BB2955D1B300A3A253 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65E4BA2955D1B300A3A253 /* CustomTabBar.swift */; };
 		7F65E4BD2955D1B500A3A253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F65E4BC2955D1B500A3A253 /* Assets.xcassets */; };
 		7F65E4C02955D1B500A3A253 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F65E4BF2955D1B500A3A253 /* Preview Assets.xcassets */; };
+		7F65E4C72955D28E00A3A253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65E4C62955D28E00A3A253 /* HomeView.swift */; };
+		7F65E4C92955D2D800A3A253 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65E4C82955D2D800A3A253 /* SettingsView.swift */; };
+		7F65E4CB2955D2E400A3A253 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65E4CA2955D2E400A3A253 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F65E4B52955D1B300A3A253 /* SwiftUICustomTabBar#1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUICustomTabBar#1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F65E4B82955D1B300A3A253 /* SwiftUICustomTabBar_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICustomTabBar_1App.swift; sourceTree = "<group>"; };
-		7F65E4BA2955D1B300A3A253 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F65E4BA2955D1B300A3A253 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		7F65E4BC2955D1B500A3A253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F65E4BF2955D1B500A3A253 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F65E4C62955D28E00A3A253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7F65E4C82955D2D800A3A253 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7F65E4CA2955D2E400A3A253 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				7F65E4B82955D1B300A3A253 /* SwiftUICustomTabBar_1App.swift */,
-				7F65E4BA2955D1B300A3A253 /* ContentView.swift */,
+				7F65E4BA2955D1B300A3A253 /* CustomTabBar.swift */,
 				7F65E4BC2955D1B500A3A253 /* Assets.xcassets */,
 				7F65E4BE2955D1B500A3A253 /* Preview Content */,
+				7F65E4C62955D28E00A3A253 /* HomeView.swift */,
+				7F65E4C82955D2D800A3A253 /* SettingsView.swift */,
+				7F65E4CA2955D2E400A3A253 /* ProfileView.swift */,
 			);
 			path = "SwiftUICustomTabBar#1";
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F65E4BB2955D1B300A3A253 /* ContentView.swift in Sources */,
+				7F65E4C72955D28E00A3A253 /* HomeView.swift in Sources */,
+				7F65E4C92955D2D800A3A253 /* SettingsView.swift in Sources */,
+				7F65E4CB2955D2E400A3A253 /* ProfileView.swift in Sources */,
+				7F65E4BB2955D1B300A3A253 /* CustomTabBar.swift in Sources */,
 				7F65E4B92955D1B300A3A253 /* SwiftUICustomTabBar_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

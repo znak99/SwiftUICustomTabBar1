@@ -10,18 +10,18 @@ import SwiftUI
 struct CustomTabBar: View {
     
     @State
-    var isTapped = 0
+    var currentTabIdx = 0
     
     var body: some View {
         GeometryReader { geo in
             ZStack {
                 Color.black.ignoresSafeArea()
                 
-                if (isTapped == 0) {
+                if (currentTabIdx == 0) {
                     HomeView()
-                } else if (isTapped == 1) {
+                } else if (currentTabIdx == 1) {
                     SettingsView()
-                } else if (isTapped == 2) {
+                } else if (currentTabIdx == 2) {
                     ProfileView()
                 }
                 
@@ -32,26 +32,30 @@ struct CustomTabBar: View {
                             .fill(.white)
                             .frame(
                                 width: geo.size.width / 1.3,
-                                height: geo.size.height / 20,
+                                height: geo.size.height / 18,
                                 alignment: .center
                             )
+                        
                         HStack {
                             Button(action: {
                                 changeTab(index: 0)
                             }) {
                                 Image(systemName: "house.fill")
+                                    .foregroundColor(currentTabIdx == 0 ? .blue : .gray)
                             }
                             Spacer()
                             Button(action: {
                                 changeTab(index: 1)
                             }) {
                                 Image(systemName: "gearshape.fill")
+                                    .foregroundColor(currentTabIdx == 1 ? .brown : .gray)
                             }
                             Spacer()
                             Button(action: {
                                 changeTab(index: 2)
                             }) {
                                 Image(systemName: "person.fill")
+                                    .foregroundColor(currentTabIdx == 2 ? .purple : .gray)
                             }
                         }
                         .foregroundColor(.gray)
@@ -62,10 +66,9 @@ struct CustomTabBar: View {
             }
         }
     }
-    
     func changeTab(index: Int) {
         withAnimation {
-            self.isTapped = index
+            self.currentTabIdx = index
         }
     }
 }
